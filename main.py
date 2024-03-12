@@ -80,7 +80,7 @@ def renomear_ultimo_arquivo_recursivo(caminho_pasta, caminho_pasta_raiz, _):
 
 
 def main():
-    print("--- RENOMER E MOVER ARQUIVOS ---")
+    print("--- RENOMEAR E MOVER ARQUIVOS ---")
 
     while True:
         try:
