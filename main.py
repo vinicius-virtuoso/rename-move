@@ -1,5 +1,6 @@
 import os
 import shutil
+import time
 
 
 def criar_pasta(destino):
@@ -88,6 +89,17 @@ def main():
             renomear_ultimo_arquivo_recursivo(
                 caminho_for_rename, caminho_for_rename, None
             )
+            print("\n")
+            print("\n")
+            print("Todos os arquivos foram movidos e renomeados!")
+            time.sleep(3)
+
+            continue_while = input("Continuar? [y/N] \n")
+            if continue_while is None:
+                continue_while = 'N'
+
+            if continue_while == "y" or continue_while == "Y":
+                main()
             break
         except FileNotFoundError:
             print("O caminho especificado não foi encontrado. Tente novamente.")
